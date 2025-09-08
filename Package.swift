@@ -3,21 +3,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "IunokCalendar",
+    name: "ElegantCalendar",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "IunokCalendar",
-            targets: ["IunokCalendar"]),
+            name: "ElegantCalendar",
+            targets: ["ElegantCalendar"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ThasianX/ElegantPages", from: "1.4.1")
     ],
     targets: [
         .target(
-            name: "IunokCalendar",
+            name: "ElegantCalendar",
             dependencies: ["ElegantPages"])
     ]
 )
